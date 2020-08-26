@@ -1,0 +1,25 @@
+<div class="row">
+    <div class="col">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero rerum nemo quisquam accusantium
+            praesentium ratione, nobis sapiente nihil molestias est!</p>
+        {{#if message}}
+        <div class="alert alert-light" role="alert">{{message}}</div>
+        {{/if}}
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" name="name" id="name" placeholder="Enter name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" class="form-control" name="email" id="email" placeholder="Enter name">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" name="message" id="message" rows="8"></textarea>
+            </div>
+            <button class="btn btn-primary">Send</button>
+            <button type="reset" class="btn btn-secondary">Reset</button>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <title>HBS App</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    {{>header}}
+
+    {{#if showBanner}}
+        {{>banner}}
+    {{/if}}
+
+    {{#if showPageTop}}
+        {{>page-top}}
+    {{/if}}
+
+    <div class="container container-body">
+        {{{body}}}
+    </div>
+
+    {{>footer}}
+
+    <!-- JS -->
+    <script src="jquery/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

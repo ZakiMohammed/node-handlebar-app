@@ -1,0 +1,16 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col">
+            <h1>{{title}}</h1>
+            <nav class="breadcrumb">
+                {{#each breadCrumbs}}
+                    {{#if this.active}}
+                        <span class="breadcrumb-item active">{{this.title}}</span>
+                    {{else}}
+                        <a class="breadcrumb-item" href="{{this.link}}">{{this.title}}</a>
+                    {{/if}}
+                {{/each}}
+            </nav>
+        </div>
+    </div>
+</div>
