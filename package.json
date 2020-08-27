@@ -2,10 +2,10 @@
   "name": "hbs-app",
   "version": "1.0.0",
   "description": "NodeJS handlebars app",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node server",
-    "nodemon": "nodemon server",
+    "start": "node index",
+    "nodemon": "nodemon index",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -17,9 +17,11 @@
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^4.5.2",
+    "bootswatch": "^4.5.2",
     "express": "^4.17.1",
     "express-handlebars": "^5.1.0",
-    "jquery": "^3.5.1"
+    "jquery": "^3.5.1",
+    "uuid": "^8.3.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
