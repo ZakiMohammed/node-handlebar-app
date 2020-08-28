@@ -1,0 +1,21 @@
+{{#if product}}
+    <div class="row">
+        <div class="col-sm-4">
+            <img class="img-fluid" src="{{product.image}}" alt="">
+        </div>
+        <div class="col-sm-8">
+            <h5 class="mt-0">
+                Ratings: {{product.rating}}, 
+                Price: ${{product.price}}
+            </h5>
+            <p class="lead">{{product.excerpt}}</p>
+            <p>{{product.description}}</p>
+        </div>
+    </div>
+{{else}}
+    <div class="row">
+        <div class="col">
+            <h4>Product Not Found</h4>
+        </div>
+    </div>
+{{/if}}

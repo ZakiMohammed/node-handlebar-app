@@ -1,6 +1,7 @@
 const express = require('express');
 const hbs = require('express-handlebars');
 const dataProducts = require('./data/products');
+const products = require('./data/products');
 
 const app = express();
 
@@ -93,6 +94,22 @@ app.get('/products', (req, res) => {
         showPageTop: true,
         products: products,
         search: search
+    });
+});
+app.get('/products/:id', (req, res) => {
+    const id = req.params.id;
+    const product = products.find(i => i.id === id);
+    const title = product ? product.title : 'Product';
+
+    res.render('product', {
+        title: title,
+        breadCrumbs: [
+            { title: 'Home', link: '/', active: false },
+            { title: 'Products', link: '/products', active: false },
+            { title: title, link: '', active: true },
+        ],
+        showPageTop: true,
+        product: product
     });
 });
 

@@ -28,7 +28,9 @@
         <div class="card h-100">
             <img class="card-img-top" src="{{this.image}}" alt="">
             <div class="card-body">
-                <h4 class="card-title">{{this.title}}</h4>
+                <h4 class="card-title">
+                    <a href="/products/{{this.id}}">{{this.title}}</a>
+                </h4>
                 <p class="card-text">{{this.excerpt}}</p>
             </div>
             <div class="card-footer">
